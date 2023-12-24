@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./deposit.css">
+  <title>Banking System - Deposit</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Banking System</h1>
+
+      <nav>
+        <ul>
+          <li><a href="../api/home.php">Home</a></li>
+          <li><a href="../api/account.php">Accounts</a></li>
+          <li><a href="../api/transactions.php">Transactions</a></li>
+          <li><a href="../api/logout.php">Logout</a></li>
+          <li><a href="../help/help.html">Help!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="deposit-form">
+      <h2>Make a Deposit</h2>
+      <form action="../api/deposit.php" method="POST">
+        <div class="form-group">
+          <label for="accountNumber">Account Number:</label>
+          <input type="text" id="accountNumber" name="accountNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="text" id="amount" name="amount" required>
+        </div>
+        <div class="form-group">
+          <label for="pin">PIN:</label>
+          <input type="password" id="pin" name="pin" required>
+        </div>
+        <div class="button-group">
+          <button type="submit">Deposit</button>
+          <button type="button" onclick="window.location='../api/home.php'">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

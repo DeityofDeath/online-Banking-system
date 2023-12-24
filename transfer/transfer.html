@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./transfer.css">
+    <title>Banking System - Transfer Money</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Banking System</h1>
+            <nav>
+                <ul>
+                    <li><a href="../api/home.php">Home</a></li>
+                    <li><a href="../api/account.php">Account</a></li>
+                    <li><a href="../api/logout.php">Logout</a></li>
+                    <li><a href="../help/help.html">Help!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="transfer-form">
+            <h2><b><u>Make a Transfer</u></b></h2>
+            <form action="../api/transfer.php" method="post" class="transfer">
+                <div>
+                    <label for="fromAccount">From Account:</label>
+                    <input type="text" id="fromAccount" name="fromAccount" required>
+                </div>
+                <div>
+                    <label for="toAccount">To Account:</label>
+                    <input type="text" id="toAccount" name="toAccount" required>
+                </div>
+                <div>
+                    <label for="pin">PIN:</label>
+                    <input type="password" id="pin" name="pin" required>
+                </div>
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" name="amount" required>
+                </div>
+                <div>
+                    <button type="submit">Transfer</button>
+                    <button type="cancel">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

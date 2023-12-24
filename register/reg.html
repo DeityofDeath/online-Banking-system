@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reg.css">
+    <title>Online Banking Registration</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://static.vecteezy.com/system/resources/thumbnails/013/948/616/small/bank-icon-logo-design-vector.jpg" alt="Bank Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="../login/loginv.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Online Banking System</h1>
+        <form action="../api/register.php" method="post" class="registration-form">
+            <label for="account-id">Account ID:</label>
+            <input type="text" id="account-id" name="account-id" placeholder="Account ID" required>
+
+            <label for="pin">Pin:</label>
+            <input type="password" id="pin" name="pin" placeholder="Pin" minlength="4" required>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" name="mobile-number" placeholder="Mobile Number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+
+            <label for="balance">Balance:</label>
+            <input type="text" id="balance" name="balance" placeholder="Balance" required>
+
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
